@@ -1,31 +1,40 @@
-export default function Contact() {
+import React from 'react';
+import { FaInstagram, FaTwitter, FaFacebookF, FaEnvelope } from 'react-icons/fa';
+
+const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-white">
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-indigo-700 mb-4">Contact Me</h2>
-        <p className="text-gray-600 mb-6">
-          Get in touch — I’d love to hear from you!
+    <section className="bg-white py-12 px-4 sm:px-6 lg:px-8" id="contact">
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl font-bold text-blue-600 mb-4">Contact Me</h2>
+        <p className="text-gray-600 mb-8">
+          Feel free to reach out via the form below or connect with me on social media!
         </p>
-        <form className="max-w-md mx-auto space-y-4">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="w-full p-3 border rounded"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full p-3 border rounded"
-          />
-          <textarea
-            placeholder="Your Message"
-            className="w-full p-3 border rounded"
-          />
-          <button className="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700">
-            Send Message
-          </button>
+
+        {/* Social Icons */}
+        <div className="flex justify-center gap-6 mb-10 text-xl text-blue-500">
+          <a href="https://instagram.com/your_username" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition">
+            <FaInstagram />
+          </a>
+          <a href="mailto:your.email@example.com" className="hover:text-red-500 transition">
+            <FaEnvelope />
+          </a>
+          <a href="https://twitter.com/your_username" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
+            <FaTwitter />
+          </a>
+          <a href="https://facebook.com/your_username" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition">
+            <FaFacebookF />
+          </a>
+        </div>
+
+        {/* Contact Form */}
+        <form className="space-y-6 max-w-lg mx-auto">
+        
+          
+          
         </form>
       </div>
     </section>
   );
-}
+};
+
+export default Contact;

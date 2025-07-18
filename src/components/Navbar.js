@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold text-indigo-600">Chaithanya</h1>
         <div className="space-x-6">
-          {["Home", "About", "Projects", "Contact"].map((item) => (
+          {["Home", "About", "Projects", "SkillsSection","Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}

@@ -1,12 +1,13 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Portfolio Website",
-      description: "Responsive personal website with React and Tailwind.",
+      title: "Wadhwani",
+      description: "Wadhwani spans a powerful ecosystem: from building global tech ventures to driving large-scale social impact in emerging economies.",
     },
     {
-      title: "To-do App",
-      description: "Task manager with drag-and-drop and localStorage.",
+      title: "Project Exhibition",
+      description: "Google Translator project exhibition—including features, architecture, demo tips, and code highlights."
+
     },
   ];
 
