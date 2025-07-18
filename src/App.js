@@ -5,7 +5,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SkillsSection from './components/SkillsSection';
-import { FaInstagram, FaTwitter, FaFacebookF, FaEnvelope } from 'react-icons/fa';
 
 function App() {
   return (
